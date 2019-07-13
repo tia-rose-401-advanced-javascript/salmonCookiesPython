@@ -17,7 +17,7 @@ def hello():
   return render_template("hello.html", second_name=SECOND_NAME)
 
 
-@app.route("/test")
+@app.route("/sales")
 def dustin():
   f"SECOND_NAME: {SECOND_NAME}"
-  return render_template("hello.html", second_name=SECOND_NAME)
+  return render_template("sales.html", second_name=SECOND_NAME)
