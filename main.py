@@ -2,13 +2,17 @@
 
 from flask import Flask
 
+# Importing variables from settings file
+from settings import NAME
+from settings import SECOND_NAME
+
 app=Flask(__name__)
 
 @app.route("/")
 def hello():
-  return "Hello Tia"
+  return f"Hello {NAME}"
 
 
 @app.route("/test")
 def dustin():
-  return "Hello Dustin"
+  return f"Hello {SECOND_NAME}"
