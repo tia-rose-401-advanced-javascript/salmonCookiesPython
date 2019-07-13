@@ -29,7 +29,7 @@ def dustin():
 
   # My attempts to get CRUD going
 
-
+# Resource https://flask-pymongo.readthedocs.io/en/latest/
 #Not sure which one is the correct one I need to import:
 # 1. from flask_pymongo import PyMongo
 
@@ -38,6 +38,7 @@ def dustin():
 # mongo = PyMongo(app)
 
 
+#Resource: https://medium.com/@MicroPyramid/mongodb-crud-operations-with-python-pymongo-a26883af4d09
 # 2. from pymongo import MongoClient
 
 # client = MongoClient('localhost, 27017')
@@ -57,8 +58,15 @@ def dustin():
 
 # info.insert_many(
 #   [
-
+#     {name: "Tia"},
+#     {name: "Dustin"},
+#     {name: "Ava"}
 #   ]
 # )
 
+# Read = info.find() or info.find_one()
+
+# Update = info.update() or info.update_one() or info.update_many() or info.replace_one
+
+# Delete = info.delete_one() or info.delete_many()
 
