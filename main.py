@@ -13,8 +13,8 @@ def hello():
   # return f"Hello {NAME}"
   f"NAME: {NAME}"
   f"SECOND_NAME: {SECOND_NAME}"
-  return render_template("hello.html", name=NAME)
-  return render_template("hello.html", second_name=SECOND_NAME)
+  return render_template("home.html", name=NAME)
+  # return render_template("hello.html", second_name=SECOND_NAME)
 
 
 @app.route("/sales")
