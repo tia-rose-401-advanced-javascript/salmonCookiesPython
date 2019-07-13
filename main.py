@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template
 
+
 # Importing variables from settings file
 from settings import NAME
 from settings import SECOND_NAME
@@ -25,3 +26,39 @@ def dustin():
   temple = env.get_template('home.html')
   output = template.render(title="Salmon Cookies")
   print (output)
+
+  # My attempts to get CRUD going
+
+
+#Not sure which one is the correct one I need to import:
+# 1. from flask_pymongo import PyMongo
+
+# PyMongo connects to the Mongo DB
+# app.config["MONGO_URI"] = "mongodb://localhost:27017/salmonCookiesPython"
+# mongo = PyMongo(app)
+
+
+# 2. from pymongo import MongoClient
+
+# client = MongoClient('localhost, 27017')
+
+# connects to the test database
+# db = client.test
+
+# gets the collection person from the database
+# info = db.person
+
+# creates one person object
+# info.insert_one(
+#   {
+#     name: "Tia"
+#   }
+# )
+
+# info.insert_many(
+#   [
+
+#   ]
+# )
+
+
