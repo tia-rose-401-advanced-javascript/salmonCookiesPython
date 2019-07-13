@@ -21,3 +21,7 @@ def hello():
 def dustin():
   f"SECOND_NAME: {SECOND_NAME}"
   return render_template("sales.html", second_name=SECOND_NAME)
+
+  temple = env.get_template('home.html')
+  output = template.render(title="Salmon Cookies")
+  print (output)

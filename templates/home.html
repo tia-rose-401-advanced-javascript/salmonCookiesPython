@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- url for is a function looking for the static directory and the file name -->
-    <link rel="stylesheet" href=" {{ url_for('static', filename='./css/style.css') }}">
-  </head>
+  {% include 'header.html' %}
   <body>
     <a href="/sales">Sales</a>
     <h1>The Salmon Cookie Shop</h1>
