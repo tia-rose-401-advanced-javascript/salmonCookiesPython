@@ -7,3 +7,8 @@ app=Flask(__name__)
 @app.route("/")
 def hello():
   return "Hello Tia"
+
+
+@app.route("/test")
+def dustin():
+  return "Hello Dustin"
