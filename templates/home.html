@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  {% include './components/head.html' %}
+  <body>
+    <a href="/sales">Sales</a>
+    {% include './components/header.html' %}
+    {% include './components/img.html' %}
+  
+    {% include './components/welcome.html' %}
+    <article class= "storeInfo">
+       {% include './components/storeHours.html' %}
+       {% include './components/storePhone.html' %}
+        <section id ="locationMaps">
+           {% include './components/pike.html' %}
+           {% include './components/seatac.html' %}
+           {% include './components/seattleCenter.html' %}
+           {% include './components/capitol.html' %}
+           {% include './components/alki.html' %}
+    </section>   
+    </article>
+  </body>
+</html>
